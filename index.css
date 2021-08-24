@@ -1,22 +1,86 @@
 body{ 
+    display: grid; 
     height: 800px;
     margin: 0;
     background-color:hsl(204, 43%, 93%) ;
-    
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
 }
 .container{
     display: grid;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-content: center;
-
-}
-.container-text{
     background-color: white;
     width: 750px;
-    height: 400px;
-    /* justify-self: center; */
-    
+    height: 600px;
+    border-radius: 10px 10px;
+    box-shadow: 0 0 10px #777777;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.container div{
+    padding: 40px;
+}
+.community-block{
+    grid-column: 1 / span 2;
+}
 
+#community-title{
+    color:hsl(179, 62%, 43%); 
+    font-weight: 700;
+    font-size: x-large;
+}
+#community-subtitle{
+    color:hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: large;
+}
+#community-des{
+    /* font-weight: 700; */
+    color:hsl(218, 22%, 67%)
+}
+
+.signup-block{
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    border-bottom-left-radius: 10px;
+    /* background-color:hsl(71, 73%, 54%); */
+
+}
+
+#signup-title{
+    font-weight: 700;
+}
+#money{
+    font-size: x-large;
+    font-weight: 700;
+}
+#sub{
+
+    vertical-align: top;
+}
+button{
+    background-color:hsl(71, 73%, 54%);
+    width: 240px;
+    height: 50px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    border-color: hsl(71, 73%, 54%);
+    border-style: none;
+    box-shadow: 0 0 10px #777777;
+}
+.why-block{
+    background-color:rgba(74,190,189,255);
+    color: white;
+    border-bottom-right-radius: 10px;
+}
+#why-title{
+    font-weight: 700;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
